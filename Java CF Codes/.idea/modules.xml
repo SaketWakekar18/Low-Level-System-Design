@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java CF Codes.iml" filepath="$PROJECT_DIR$/.idea/Java CF Codes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Collection Framework mod2/Java Collection Framework mod2.iml" filepath="$PROJECT_DIR$/Java Collection Framework mod2/Java Collection Framework mod2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCFBonusModule/JavaCFBonusModule.iml" filepath="$PROJECT_DIR$/JavaCFBonusModule/JavaCFBonusModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCollectionMod1/JavaCollectionMod1.iml" filepath="$PROJECT_DIR$/JavaCollectionMod1/JavaCollectionMod1.iml" />
+    </modules>
+  </component>
+</project>
