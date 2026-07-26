@@ -1,6 +1,7 @@
 package models;
 
 import interfaces.ParkingSpot;
+import interfaces.Vehicle;
 
 import java.util.List;
 import java.util.Map;
@@ -13,15 +14,14 @@ public class ParkingLotSystem {
     private String address;
     private List<Entrance> entrances;
     private List<Exit> exits;
-    private DisplayBoard displayBoard;
     private Map<String, List<ParkingSpot>> parkingSpots;
     private ParkingRate parkingRates;
     private Map<String, ParkingTicket> parkingTickets;
     private int currentVehicleCount;
-    private int availableCompactSizedVehicles;
-    private int availableHandicappedSizedVehicles;
-    private int availableLargeSizedVehicles;
-    private int availableMotorCycleSizedVehicles;
+    private int availableCompactVehicles;
+    private int availableHandicappedVehicles;
+    private int availableLargeVehicles;
+    private int availableMotorCycleVehicles;
 
     private ParkingLotSystem() {
 
@@ -43,14 +43,14 @@ public class ParkingLotSystem {
     }
 
     public void showAvailableSpots(DisplayBoard displayBoard) {
-        displayBoard.showAvailableSpots(availableCompactSizedVehicles, availableHandicappedSizedVehicles, availableLargeSizedVehicles, availableMotorCycleSizedVehicles);
+        displayBoard.showAvailableSpots(availableCompactVehicles, availableHandicappedVehicles, availableLargeVehicles, availableMotorCycleVehicles);
     }
 
-    public void updateDisplayBoard() {
-        displayBoard.showAvailableSpots(availableCompactSizedVehicles, availableHandicappedSizedVehicles, availableLargeSizedVehicles, availableMotorCycleSizedVehicles);
+    public void updateDisplayBoard(DisplayBoard displayBoard) {
+        displayBoard.showAvailableSpots(availableCompactVehicles, availableHandicappedVehicles, availableLargeVehicles, availableMotorCycleVehicles);
 
         if (isFull()) {
-            throw new RuntimeException("Parking Lot Full");
+            displayBoard.showParkingFullNotification();
         }
     }
 
@@ -66,9 +66,11 @@ public class ParkingLotSystem {
         return true;
     }
 
-    private boolean addParkingTicket(ParkingTicket parkingTicket) {
-        return true;
-    }
+    private void findAvailableParkingSpots(Vehicle vehicle) {}
 
+    private void assignParkingTicket(ParkingTicket parkingTicket) {}
 
+    private void parkVehicle(Vehicle vehicle) {}
+
+    private void removeVehicle(Vehicle vehicle) {}
 }

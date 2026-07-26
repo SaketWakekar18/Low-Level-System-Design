@@ -2,10 +2,6 @@ package models;
 
 public class DisplayBoard {
     private int id;
-    private int availableCompactSizedVehicles;
-    private int availableHandicappedSizedVehicles;
-    private int availableLargeSizedVehicles;
-    private int availableMotorCycleSizedVehicles;
 
     public int getId() {
         return id;
@@ -15,46 +11,14 @@ public class DisplayBoard {
         this.id = id;
     }
 
-    public int getAvailableCompactSizedVehicles() {
-        return availableCompactSizedVehicles;
-    }
+    public void showAvailableSpots(int availableCompactVehicles, int availableHandicappedVehicles, int availableLargeVehicles, int availableMotorCycleVehicles) {
+        System.out.println("Compact Spots      : " + availableCompactVehicles);
 
-    public void setAvailableCompactSizedVehicles(int availableCompactSizedVehicles) {
-        this.availableCompactSizedVehicles = availableCompactSizedVehicles;
-    }
+        System.out.println("Handicapped Spots  : " + availableHandicappedVehicles);
 
-    public int getAvailableHandicappedSizedVehicles() {
-        return availableHandicappedSizedVehicles;
-    }
+        System.out.println("Large Spots        : " + availableLargeVehicles);
 
-    public void setAvailableHandicappedSizedVehicles(int availableHandicappedSizedVehicles) {
-        this.availableHandicappedSizedVehicles = availableHandicappedSizedVehicles;
-    }
-
-    public int getAvailableLargeSizedVehicles() {
-        return availableLargeSizedVehicles;
-    }
-
-    public void setAvailableLargeSizedVehicles(int availableLargeSizedVehicles) {
-        this.availableLargeSizedVehicles = availableLargeSizedVehicles;
-    }
-
-    public int getAvailableMotorCycleSizedVehicles() {
-        return availableMotorCycleSizedVehicles;
-    }
-
-    public void setAvailableMotorCycleSizedVehicles(int availableMotorCycleSizedVehicles) {
-        this.availableMotorCycleSizedVehicles = availableMotorCycleSizedVehicles;
-    }
-
-    public void showAvailableSpots(int availableCompactSizedVehicles, int availableHandicappedSizedVehicles, int availableLargeSizedVehicles, int availableMotorCycleSizedVehicles) {
-        System.out.println("Compact Spots      : " + availableCompactSizedVehicles);
-
-        System.out.println("Handicapped Spots  : " + availableHandicappedSizedVehicles);
-
-        System.out.println("Large Spots        : " + availableLargeSizedVehicles);
-
-        System.out.println("Motorcycle Spots   : " + availableMotorCycleSizedVehicles);
+        System.out.println("Motorcycle Spots   : " + availableMotorCycleVehicles);
 
     }
 
