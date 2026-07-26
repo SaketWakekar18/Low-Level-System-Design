@@ -23,6 +23,8 @@ public class ParkingLotSystem {
     private int availableLargeVehicles;
     private int availableMotorCycleVehicles;
 
+    private DisplayBoard displayBoard;
+
     private ParkingLotSystem() {
 
     }
@@ -42,11 +44,11 @@ public class ParkingLotSystem {
         return currentVehicleCount >= MAX_CAPACITY;
     }
 
-    public void showAvailableSpots(DisplayBoard displayBoard) {
+    public void showAvailableSpots() {
         displayBoard.showAvailableSpots(availableCompactVehicles, availableHandicappedVehicles, availableLargeVehicles, availableMotorCycleVehicles);
     }
 
-    public void updateDisplayBoard(DisplayBoard displayBoard) {
+    public void updateDisplayBoard() {
         displayBoard.showAvailableSpots(availableCompactVehicles, availableHandicappedVehicles, availableLargeVehicles, availableMotorCycleVehicles);
 
         if (isFull()) {
@@ -66,11 +68,11 @@ public class ParkingLotSystem {
         return true;
     }
 
-    private void findAvailableParkingSpots(Vehicle vehicle) {}
+    private void findAvailableSpots(Vehicle vehicle) {}
 
     private void assignParkingTicket(ParkingTicket parkingTicket) {}
 
-    private void parkVehicle(Vehicle vehicle) {}
+    private ParkingTicket parkVehicle(Vehicle vehicle) { return null;}
 
-    private void removeVehicle(Vehicle vehicle) {}
+    private void removeVehicle(ParkingTicket ticket) {}
 }
