@@ -1,5 +1,6 @@
 package models;
 
+import FactoryMethod.VehicleFactory;
 import interfaces.Account;
 import interfaces.Vehicle;
 
@@ -23,11 +24,13 @@ public class Receptionist extends Account {
 
     }
 
-    public void addVehicle(Vehicle vehicle) {
-
+    public void addVehicle(Branch branch, VehicleFactory vehicleFactory) {
+        Vehicle vehicle = vehicleFactory.createVehicle();
+        branch.addedVehicles();
+        System.out.println("Vehicle added successfully: "+ vehicle.getVehicleType());
     }
 
-    public void removeVehicle(Vehicle vehicle) {
+    public void removeVehicle(Branch branch, VehicleFactory vehicleFactory) {
 
     }
 

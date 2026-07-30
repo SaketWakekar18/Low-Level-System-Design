@@ -13,6 +13,10 @@ public abstract class Vehicle {
     private int fuelCapacity;
     private double mileage;
 
+    public Vehicle(VehicleType vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+
     public int getVehicleId() {
         return vehicleId;
     }
