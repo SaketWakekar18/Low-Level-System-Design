@@ -6,7 +6,7 @@ import models.Car;
 
 public class CarFactory implements VehicleFactory {
 
-    public CarType carType;
+    private CarType carType;
 
     public CarFactory(CarType carType) {
         this.carType = carType;

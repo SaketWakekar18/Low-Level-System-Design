@@ -5,7 +5,7 @@ import interfaces.Vehicle;
 import models.Van;
 
 public class VanFactory implements VehicleFactory {
-    private final VanType vanType;
+    private VanType vanType;
 
     public VanFactory(VanType vanType) {
         this.vanType = vanType;

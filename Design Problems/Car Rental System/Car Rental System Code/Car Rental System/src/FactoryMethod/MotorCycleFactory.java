@@ -5,7 +5,7 @@ import interfaces.Vehicle;
 import models.MotorCycle;
 
 public class MotorCycleFactory implements VehicleFactory {
-    public MotorCycleType motorCycleType;
+    private MotorCycleType motorCycleType;
 
     public MotorCycleFactory(MotorCycleType motorCycleType) {
         this.motorCycleType = motorCycleType;
