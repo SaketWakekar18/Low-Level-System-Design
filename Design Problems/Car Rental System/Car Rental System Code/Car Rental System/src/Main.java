@@ -1,9 +1,10 @@
-import DecoratorPattern.*;
-import FactoryMethod.*;
-import constants.CarType;
-import constants.MotorCycleType;
+import DecoratorPattern.BasicReservation;
+import DecoratorPattern.ChildSeatDecorator;
+import DecoratorPattern.GPSDecorator;
+import DecoratorPattern.Reservation;
+import FactoryMethod.TruckFactory;
+import FactoryMethod.VehicleFactory;
 import constants.TruckType;
-import constants.VanType;
 import models.Branch;
 import models.Receptionist;
 
