@@ -1,0 +1,11 @@
+package models;
+
+import interfaces.Piece;
+
+public class King extends Piece {
+
+    @Override
+    public boolean canMove(Board board, Box start, Box end) {
+        return false;
+    }
+}

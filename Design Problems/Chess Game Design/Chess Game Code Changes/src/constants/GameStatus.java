@@ -1,0 +1,11 @@
+package constants;
+
+public enum GameStatus {
+    IN_PROGRESS,
+
+    CHECKMATE, STALEMATE,
+
+    WHITE_RESIGNED, BLACK_RESIGNED,
+
+    WHITE_FORFEITED, BLACK_FORFEITED
+}

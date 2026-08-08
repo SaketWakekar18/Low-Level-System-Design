@@ -1,0 +1,86 @@
+Online Multiplayer Chess Game Requirements
+
+Purpose:
+
+This system allows players to play chess against each other online.
+
+Game Rules:
+
+The game follows the official international chess rules.
+
+Player Setup:
+
+Each player is randomly given either black or white pieces.
+
+At the start, each player has the standard set of pieces: eight pawns, two rooks, two bishops, two knights, one queen, and one king.
+
+Gameplay:
+
+The player with the white pieces makes the first move.
+
+Players cannot take back a move once it's made.
+
+All moves are recorded by the system.
+
+The game can end in a few ways: checkmate, forfeit, stalemate (draw), or resignation.
+
+Chess Piece Movement Rules:
+Piece
+
+Movement Rules
+
+King
+
+Moves one step in any direction. Cannot move into a check.
+
+Queen
+
+Moves horizontally, vertically, or diagonally. Cannot jump over pieces.
+
+Pawn
+
+Moves one box forward. Can move two boxes forward on the first move. Can move one box diagonally to capture an opponent's piece.
+
+Bishop
+
+Moves diagonally. Cannot jump over pieces.
+
+Rook
+
+Moves horizontally or vertically. Cannot jump over pieces.
+
+Knight
+
+Moves in an L-shape: two boxes in one direction and one box perpendicular. Can jump over pieces.
+
+Special Situations in the Game:
+
+Situation
+
+Description
+
+Checkmate
+
+The king is in check (threatened) and cannot escape. The opponent wins.
+
+Stalemate
+
+The king is not in check, but the player has no legal moves left. The game is a draw.
+
+Forfeiture
+
+A player does not show up for the game. They lose by default.
+
+Resignation
+
+A player decides to quit because they believe they will lose. The opponent wins.
+
+The king moves two boxes towards a rook, and the rook moves to the box the king passed over. Conditions:
+
+Castling
+
+Neither piece has moved before
+
+No pieces between them
+
+The king is not in check or moving through check
